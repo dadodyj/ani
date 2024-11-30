@@ -2,6 +2,10 @@ body{
     margin: 0;
     overflow: hidden;
 }
+.message{
+
+    display: none;
+}
 img{
     height: 49.4vh;
     width: 49.4vh;
@@ -58,7 +62,19 @@ img{
 }
 @media screen and (max-width: 800px){
     img{
-        height: 50px;
-        width: 50px;
+        display: none;
+    }
+    body{
+        background-color: black;
+
+    }
+    .message{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .message > *{
+        color: white;
+        display: block;
     }
 }
